@@ -4,13 +4,19 @@
   box-sizing: border-box;
 }
 
+body{
+  background:url(bg.png);
+  backdrop-filter: blur(2px);
+}
+
 .container {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-  background-color: blueviolet;
+  background-position: center;
   flex-direction: column;
+  z-index: -1000;
 }
 
 #judul {
@@ -18,6 +24,7 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 5rem;
   font-weight: 800;
+  user-select: none;
 }
 
 #lyrics {
@@ -25,6 +32,11 @@
   font-family: 'Courier New', Courier, monospace;
   font-size: 4rem;
   font-weight: 800;
+  text-shadow:0 0 5px #000,
+  0 0 10px #000,
+  0 0 50px #000,
+  0 0 100px #000,
+  0 0 200px #000;
 }
 
 #lyrics::selection{
@@ -51,6 +63,15 @@
   0 0 200px #FFF,
   0 0 500px #FFF;
   transition: all .2s ease-in-out;
+}
+
+.play{
+  position: absolute;
+  display: flex;
+  height: 150px;
+  width: 100%;
+  /* background: red; */
+  bottom: 0%;
 }
 
 @media screen and (max-width:420px) {

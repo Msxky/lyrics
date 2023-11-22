@@ -58,4 +58,9 @@ function play(){
   setTimeout(function () {
     lirik.textContent="why you always in a mood"
   },21000)
+
+  setTimeout(function () {
+    location.reload();
+  },30000)
+
 }
