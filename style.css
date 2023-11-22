@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: blueviolet;
+  flex-direction: column;
+}
+
+#judul {
+  color: #FFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+#lyrics {
+  color: #FFF;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+#lyrics::selection{
+  color: #222;
+  background: pink;
+}
+
+#btn{
+  margin-top: 2rem;
+  border: none;
+  padding: 10px;
+  width: 4rem;
+  border-radius: 10%;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+}
+
+#btn:hover{
+  color: #FFF;
+  background: #222;
+  box-shadow: 0 0 10px #FFF,
+  0 0 50px #FFF,
+  0 0 100px #FFF,
+  0 0 200px #FFF,
+  0 0 500px #FFF;
+  transition: all .2s ease-in-out;
+}
+
+@media screen and (max-width:420px) {
+  #lyrics {
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}
